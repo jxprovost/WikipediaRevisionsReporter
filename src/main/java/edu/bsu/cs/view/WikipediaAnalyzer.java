@@ -65,6 +65,7 @@ public final class WikipediaAnalyzer extends VBox {
                 stringBuilder.append(message);
                 stringBuilder.append("\n");
             }
+
             outputArea.setText(stringBuilder.toString());
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
