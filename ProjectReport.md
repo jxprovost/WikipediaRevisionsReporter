@@ -2,20 +2,7 @@
 
 (Jaren Xavier Provost)
 
-## Markdown Tips
-
-If you are unfamiliar with MarkDown, check out 
-[the official documentation](https://guides.github.com/features/mastering-markdown/).
-
-Note that IntelliJ IDEA has a Markdown preview that you can access in 
-the upper-right of the editor. Also, since Markdown documents&mdash;like
-source code&mdash;should be human-readable, make sure you keep your lines
-short, as you can see I have done in my Markdown files.
-
-Please remove this subsection before submitting your report. 
-
 ## Challenge #1 Complete
-
 
 The solution for coding challenge one is simple. The description 
 for challenge number one specifies that there are no changes
@@ -80,9 +67,34 @@ still set up the code to run the alternative format I constructed.
 
 ## Challenge #3 Complete
 
-(Explain your solution to Challenge #3. If it is not complete, change
-the subsection title above to "Incomplete" and explain how far you got
-and where you got stuck.)
+My solution for challenge 3 starts with beginning the declaration of 
+the `String stringBuilder` and setting it equal to `response.revision()` 
+which then is followed by a chain to `stream()`. I did not originally 
+have it set as a String, but it changed as I continued the process 
+of using higher-order functions and method chaining. 
+(`String stringBuilder = response.revision().stream().`). I started 
+the declaration of the string as response.revision is the list that 
+is looped for the original for loop, and I called `stream()` as it is 
+supposed to call on the list. After calling `stream()`, I continued 
+with the process of Higher-Order function and chaining with the 
+chaining of a `.map()` to the `stream()`. Within the `map()`, I add the new 
+formatter created from the `revisionFormatter` outside of the for loop 
+and used the `alternativeFormat` I developed in challenge two. I am 
+reconstructing the first line within the for loop but through stream 
+processing. I lastly use a collect function to end off the chain of 
+functions. Within my collect function, I set up Collectors.joining(), 
+and in joining, I  make "\n" the delimiter. The Collectors class 
+allows the user the ability to deal with certain elements in this 
+case. As I set up `Collectors.joining("\n")` the `.joining("\n")` is 
+making it so that when the strings returned from the alternativeFormat 
+called within the map function of the stream, the items, after going 
+through the stream completely, will not be displayed on a single line. 
+I know this, as I myself did not use `.joining("\n")` at first, which 
+caused all alternativeFormat output strings to be given and displayed 
+on a single line of the display window. Other than that, I managed to 
+fix whatever issues and complications I came across and in the end 
+found the solution for Challenge three, thus completing it. 
+
 
 
 ## Reflection Question #1: Functional vs OO
@@ -109,12 +121,11 @@ still partially prefer using it a little more with code.
 Polymorphism engendered dependency inversion as I was working on and 
 constructing code for challenge two. More specifically, if I am 
 understanding the concept correctly, polymorphism is used as I make use 
-of the @Override methods in my `FormatterModule`, my RevisionFormatter 
+of the @Override methods in my `FormatterModule`, and my RevisionFormatter 
 class contains an @Overide method over my `alternativeFormat` as well. 
 The locations I listed are only the times that I have used it, 
 polymorphism appears to be used in several classes as the classes 
 incorporate the @Overide method. Dependency inversion, specifically 
-takes place within my `revisionFormatter` class if I am understanding 
-this correctly. 
+takes place within my `revisionFormatter` class.
 
 
