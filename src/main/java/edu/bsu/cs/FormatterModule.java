@@ -1,16 +1,17 @@
 package edu.bsu.cs;
 
 import com.google.inject.AbstractModule;
-import edu.bsu.cs.model.Runtime;
+import edu.bsu.cs.model.Formatter;
 import edu.bsu.cs.view.RevisionFormatter;
 
 import java.time.Duration;
 
-public class RuntimeModule extends AbstractModule {
+
+public class FormatterModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        //bind(Runtime.class).to(RevisionFormatter.class); // How am I suppose to do this???
+        bind(Formatter.class).to(RevisionFormatter.class);
         bind(Duration.class).toInstance(Duration.ofSeconds(2));
     }
 }

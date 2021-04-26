@@ -2,27 +2,29 @@ edu/bsu/cs/model/WikipediaQueryEngine.java
  edu.bsu.cs.model.WikipediaQueryEngine
 edu/bsu/cs/QueryEngineModule.java
  edu.bsu.cs.QueryEngineModule
+edu/bsu/cs/model/QueryResponse.java
+ edu.bsu.cs.model.QueryResponse
+ edu.bsu.cs.model.QueryResponse$Builder
+edu/bsu/cs/model/ResponseParser.java
+ edu.bsu.cs.model.ResponseParser
 edu/bsu/cs/model/Revision.java
  edu.bsu.cs.model.Revision
  edu.bsu.cs.model.Revision$Builder
-edu/bsu/cs/model/ResponseParser.java
- edu.bsu.cs.model.ResponseParser
 edu/bsu/cs/model/QueryEngine.java
  edu.bsu.cs.model.QueryEngine
 edu/bsu/cs/model/FakeQueryEngine.java
  edu.bsu.cs.model.FakeQueryEngine
-edu/bsu/cs/model/QueryResponse.java
- edu.bsu.cs.model.QueryResponse
- edu.bsu.cs.model.QueryResponse$Builder
-edu/bsu/cs/model/Runtime.java
- edu.bsu.cs.model.Runtime
-edu/bsu/cs/RuntimeModule.java
- edu.bsu.cs.RuntimeModule
+edu/bsu/cs/view/AlternativeRevisionFormatter.java
+ edu.bsu.cs.view.AlternativeRevisionFormatter
+edu/bsu/cs/view/RevisionFormatter.java
+ edu.bsu.cs.view.RevisionFormatter
+edu/bsu/cs/FormatterModule.java
+ edu.bsu.cs.FormatterModule
+edu/bsu/cs/model/Formatter.java
+ edu.bsu.cs.model.Formatter
 edu/bsu/cs/App.java
  edu.bsu.cs.App
  edu.bsu.cs.App$1
-edu/bsu/cs/view/RevisionFormatter.java
- edu.bsu.cs.view.RevisionFormatter
 edu/bsu/cs/view/WikipediaAnalyzer.java
  edu.bsu.cs.view.WikipediaAnalyzer
  edu.bsu.cs.view.WikipediaAnalyzer$1
