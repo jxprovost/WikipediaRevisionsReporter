@@ -61,7 +61,7 @@ public final class WikipediaAnalyzer extends VBox {
             RevisionFormatter formatter = new RevisionFormatter();
 
             String stringBuilder = response.revisions().stream()
-                    .map(formatter::format)
+                    .map(formatter::alternativeFormat)
                     .collect(Collectors.joining("\n"));
 
             outputArea.setText(stringBuilder);

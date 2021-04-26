@@ -15,6 +15,7 @@ public class RevisionFormatter implements Formatter {
                 revision.name);
     }
 
+    @Override
     public String alternativeFormat(Revision revision) {
         String dateTime = DateTimeFormatter.ofPattern("MM/dd/yyyy 'at' HH:mm:ss")
                 .withZone(ZoneId.systemDefault()).format(revision.timestamp);
