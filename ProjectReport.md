@@ -33,7 +33,7 @@ people who revised the article found based on the input submitted in the
 search bar. 
 
 
-## Challenge #2 Complete
+## Challenge #2 Incomplete
 
 Coding challenge two was a lot more challenging in comparison to 
 coding challenge 1. For my solution for challenge two, I came very 
@@ -53,7 +53,6 @@ containing `revision.timestamp`. For the remainder of the function, I set
 up the output String similarly to how the original format output String 
 but with a few adjustments to further meet the requirements of providing 
 a more user-friendly display of the 30 or fewer most recent revisions. 
-
 
 After setting up my alternative format function, I added a Formatter 
 Interface. In the Formatter interface, I placed and declared both the 
@@ -75,7 +74,7 @@ comes up with several errors that I am not entirely sure how to fix.
 To my knowledge, the main issue that is causing me to be unable to 
 consider this challenge truly completed has something to do with the 
 interface I constructed. I do know for a fact that I am very close to 
-the true solution of challenge 2. Even if it is not 100% completed, I 
+the solution of challenge 2. Even if it is not 100% completed, I 
 still set up the code to run the alternative format I constructed. 
 
 
@@ -88,17 +87,34 @@ and where you got stuck.)
 
 ## Reflection Question #1: Functional vs OO
 
-(Write one or more paragraphs comparing and contrasting the iterative and functional  
-approaches to string concatenation you explored in challenge #3. Which do you
-prefer, and why?)
+The iterative and functional approaches can both develop code for a 
+particular task or objective but complete them in very different ways. 
+The iterative approach is known for basically being a recursive process 
+that completes or commences the same repetitive sequence. The functional 
+approach, in summary, involves the process of using higher-order functions 
+and method chaining. The iterative approach to concatenation is simple to 
+understand and create, thus making it more comfortable to implement. I 
+have had more experience working with the iterative approach as well. I, 
+however, prefer the functional application a little bit more over the 
+iterative application. The reasoning behind my preference is that I find 
+the visual formation and clean setup of the functional approach to be more 
+appealing, more satisfying to construct, and more interesting to set up. I 
+could still use some more practice working with the functional approach to 
+string concatenation and gain more experience with it, but as I said, I 
+still partially prefer using it a little more with code. 
 
 
 ## Reflection Question #2: Polymorphism and Dependency Inversion
 
-(Explain how polymorphism engendered dependency inversion in this little
-application. Be clear and precise here, as this is, in part, an assessment of
-your correct use of technical terminology.
-Consider, for example, where exactly is polymorphism used?
-Where exactly is a dependency inverted?)
+Polymorphism engendered dependency inversion as I was working on and 
+constructing code for challenge two. More specifically, if I am 
+understanding the concept correctly, polymorphism is used as I make use 
+of the @Override methods in my `FormatterModule`, my RevisionFormatter 
+class contains an @Overide method over my `alternativeFormat` as well. 
+The locations I listed are only the times that I have used it, 
+polymorphism appears to be used in several classes as the classes 
+incorporate the @Overide method. Dependency inversion, specifically 
+takes place within my `revisionFormatter` class if I am understanding 
+this correctly. 
 
 
