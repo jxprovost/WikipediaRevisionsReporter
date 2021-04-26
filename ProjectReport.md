@@ -126,6 +126,6 @@ class contains an @Overide method over my `alternativeFormat` as well.
 The locations I listed are only the times that I have used it, 
 polymorphism appears to be used in several classes as the classes 
 incorporate the @Overide method. Dependency inversion, specifically 
-takes place within my `revisionFormatter` class.
+takes place within my `revisionFormatter` class. 
 
 
