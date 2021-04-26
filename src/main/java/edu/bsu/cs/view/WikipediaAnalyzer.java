@@ -61,10 +61,10 @@ public final class WikipediaAnalyzer extends VBox {
             RevisionFormatter formatter = new RevisionFormatter();
 
             String stringBuilder = response.revisions().stream()
-                    .map(formatter::alternativeFormat)
+                    .map(formatter::format)
                     .collect(Collectors.joining("\n"));
 
-            outputArea.setText(stringBuilder); //.toString());
+            outputArea.setText(stringBuilder);
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Connection Problem");

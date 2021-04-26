@@ -18,8 +18,7 @@ public class RevisionFormatter implements Formatter {
     public String alternativeFormat(Revision revision) {
         String dateTime = DateTimeFormatter.ofPattern("MM/dd/yyyy 'at' HH:mm:ss")
                 .withZone(ZoneId.systemDefault()).format(revision.timestamp);
-        String name = revision.name;
-        return String.format("On %s, a revision was made by %s.", dateTime, name);
+        return String.format("On %s, a revision was made by %s.", dateTime, revision.name);
     }
 
 }
